@@ -67,6 +67,12 @@
     <Compile Include="memento\History.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stateExcercise\Bicyling.cs" />
+    <Compile Include="stateExcercise\DirectionService.cs" />
+    <Compile Include="stateExcercise\Driving.cs" />
+    <Compile Include="stateExcercise\ITravelMode.cs" />
+    <Compile Include="stateExcercise\Transit.cs" />
+    <Compile Include="stateExcercise\Walking.cs" />
     <Compile Include="state\BrushTool.cs" />
     <Compile Include="state\Canvas.cs" />
     <Compile Include="state\EraseTool.cs" />
