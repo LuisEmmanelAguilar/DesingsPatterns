@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="iterator\BrowseHistory.cs" />
     <Compile Include="mementoExcercise\DocumentMemento.cs" />
     <Compile Include="mementoExcercise\DocumentState.cs" />
     <Compile Include="mementoExcercise\HistoryDocument.cs" />

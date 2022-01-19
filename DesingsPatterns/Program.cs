@@ -1,5 +1,4 @@
-﻿using DesingsPatterns.state;
-using DesingsPatterns.stateExcercise;
+﻿using DesingsPatterns.iterator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,18 +11,19 @@ namespace DesingsPatterns
     {
         static void Main(string[] args)
         {
-            var service = new DirectionService(new Walking());
-            service.getETA();
-            service.getDirection();
+            // Iterator Pattern
+            var history = new BrowseHistory();
+            history.push("site a");
+            history.push("site b");
+            history.push("site c");
 
-            //var canvas = new Canvas();
-            //canvas.setCurrentTool(new SelectionTool());
-            //canvas.setCurrentTool(new BrushTool());
-            //canvas.setCurrentTool(new EraseTool());
-            //canvas.mouseDown();
-            //canvas.mouseUp();
+            for(var i = 0; i < history.getUrls().Count; i++)
+            {
+                var url = history.getUrls()[i];
+                Console.WriteLine(url);
+            }
 
-
+            Console.ReadLine();
 
         }
     }
