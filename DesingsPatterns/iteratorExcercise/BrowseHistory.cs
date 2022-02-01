@@ -8,46 +8,45 @@ namespace DesingsPatterns.iteratorExcercise
 {
     internal class BrowseHistory
     {
-        private List<String> urls = new List<string>();
+        private String[] urls = new string[10];
+        private int count;
+
         public void push(String url)
         {
-            urls.Add(url);
+            urls[count++] = url;
         }
 
         public String pop()
         {
-            var lastIndex = urls.Last();
-            urls.Remove(lastIndex);
-
-            return lastIndex;
+            return urls[--count];
         }
 
         public Iterator createIterator()
         {
-            return new ListIterator(history: this);
+            return new ArrayIterator(history: this);
         }
 
 
         // NESTED CLASS
-        public class ListIterator : Iterator
+        public class ArrayIterator : Iterator
         {
             private readonly BrowseHistory history;
             private int index;
 
-            public ListIterator(BrowseHistory history)
+            public ArrayIterator(BrowseHistory history)
             {
                 this.history = history;
             }
 
 
-            public string current()
-            {
-                return history.urls.ElementAt(index);
-            }
-
             public bool hasNext()
             {
                 return (index < history.urls.Count());
+            }
+
+            public string current()
+            {
+                return history.urls.ElementAt(index);
             }
 
             public void next()

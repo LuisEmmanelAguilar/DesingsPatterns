@@ -17,6 +17,8 @@ namespace DesingsPatterns
             history.push("site b");
             history.push("site c");
 
+            // So... the main class was not afected
+            // Neither the Iterator class
             Iterator iterator = history.createIterator();
             while(iterator.hasNext())
             {
