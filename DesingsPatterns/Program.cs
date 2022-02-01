@@ -1,4 +1,4 @@
-﻿using DesingsPatterns.iterator;
+﻿using DesingsPatterns.iteratorExcercise;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +17,12 @@ namespace DesingsPatterns
             history.push("site b");
             history.push("site c");
 
-            for(var i = 0; i < history.getUrls().Count; i++)
+            Iterator iterator = history.createIterator();
+            while(iterator.hasNext())
             {
-                var url = history.getUrls()[i];
+                var url = iterator.current();
                 Console.WriteLine(url);
+                iterator.next();
             }
 
             Console.ReadLine();

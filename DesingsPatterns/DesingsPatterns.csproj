@@ -59,6 +59,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="iteratorExcercise\BrowseHistory.cs" />
+    <Compile Include="iteratorExcercise\Iterator.cs" />
     <Compile Include="iterator\BrowseHistory.cs" />
     <Compile Include="mementoExcercise\DocumentMemento.cs" />
     <Compile Include="mementoExcercise\DocumentState.cs" />
@@ -96,5 +98,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

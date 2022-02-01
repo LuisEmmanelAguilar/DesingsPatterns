@@ -12,11 +12,14 @@ namespace DesingsPatterns.iterator
         private List<String> urls = new List<string>();
 
         // methods
+
+        // addd url
         public void push(String url)
         {
             urls.Add(url);
         }
 
+        // remove url
         public String pop()
         {
             var lastIndex = urls.Last();
