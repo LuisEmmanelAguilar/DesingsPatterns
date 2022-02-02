@@ -85,6 +85,10 @@
     <Compile Include="state\SelectionTool.cs" />
     <Compile Include="state\ITool.cs" />
     <Compile Include="state\ToolType.cs" />
+    <Compile Include="strategyExcercise\AES.cs" />
+    <Compile Include="strategyExcercise\ChatClient.cs" />
+    <Compile Include="strategyExcercise\DES.cs" />
+    <Compile Include="strategyExcercise\EncryptionAlgorithm.cs" />
     <Compile Include="strategy\BlackAndWhiteFilter.cs" />
     <Compile Include="strategy\Compressor.cs" />
     <Compile Include="strategy\Filter.cs" />
