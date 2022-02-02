@@ -61,6 +61,9 @@
   <ItemGroup>
     <Compile Include="iteratorExcercise\BrowseHistory.cs" />
     <Compile Include="iteratorExcercise\Iterator.cs" />
+    <Compile Include="iteratorProuctExcercise\Iterator.cs" />
+    <Compile Include="iteratorProuctExcercise\Product.cs" />
+    <Compile Include="iteratorProuctExcercise\ProductCollection.cs" />
     <Compile Include="iterator\BrowseHistory.cs" />
     <Compile Include="mementoExcercise\DocumentMemento.cs" />
     <Compile Include="mementoExcercise\DocumentState.cs" />
