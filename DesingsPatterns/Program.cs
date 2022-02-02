@@ -1,4 +1,5 @@
-﻿using DesingsPatterns.iteratorExcercise;
+﻿
+using DesingsPatterns.strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,21 +12,11 @@ namespace DesingsPatterns
     {
         static void Main(string[] args)
         {
-            // Iterator Pattern
-            var history = new BrowseHistory();
-            history.push("site a");
-            history.push("site b");
-            history.push("site c");
+            // Strategy Pattern
+            var imageStorage1 = new ImageStorage();
+            imageStorage1.store("a", new JpegCompressor(), new BlackAndWhiteFilter());
+            imageStorage1.store("a", new PngCompressor(), new BlackAndWhiteFilter());
 
-            // So... the main class was not afected
-            // Neither the Iterator class
-            Iterator iterator = history.createIterator();
-            while(iterator.hasNext())
-            {
-                var url = iterator.current();
-                Console.WriteLine(url);
-                iterator.next();
-            }
 
             Console.ReadLine();
 
