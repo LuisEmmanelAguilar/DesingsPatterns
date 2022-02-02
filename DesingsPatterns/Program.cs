@@ -1,5 +1,5 @@
 ﻿
-using DesingsPatterns.template;
+using DesingsPatterns.templateExcercise;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +13,8 @@ namespace DesingsPatterns
         static void Main(string[] args)
         {
             // Template Method Pattern
-            var task = new TransferMoneyTask();
-            task.execute();
+            ChatWindow window = new ChatWindow();
+            window.close();
 
             Console.ReadLine();
 
