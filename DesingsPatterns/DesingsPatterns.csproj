@@ -59,6 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="command\AddCustomerCommand.cs" />
+    <Compile Include="command\fx\Button.cs" />
+    <Compile Include="command\fx\Command.cs" />
+    <Compile Include="command\CustomerService.cs" />
     <Compile Include="iteratorExcercise\BrowseHistory.cs" />
     <Compile Include="iteratorExcercise\Iterator.cs" />
     <Compile Include="iteratorProuctExcercise\Iterator.cs" />

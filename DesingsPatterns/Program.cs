@@ -1,4 +1,5 @@
 ﻿
+using DesingsPatterns.command;
 using DesingsPatterns.templateExcercise;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,12 @@ namespace DesingsPatterns
     {
         static void Main(string[] args)
         {
-            // Template Method Pattern
-            ChatWindow window = new ChatWindow();
-            window.close();
+            // Command Pattern
+            var service = new CustomerService();
+            var command = new AddCustomerCommand(service);
+            var button = new Button(command);
+            button.click();
+
 
             Console.ReadLine();
 
