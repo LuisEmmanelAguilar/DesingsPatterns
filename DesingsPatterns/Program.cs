@@ -14,11 +14,10 @@ namespace DesingsPatterns
         static void Main(string[] args)
         {
             // Command Pattern
-            var service = new CustomerService();
-            var command = new AddCustomerCommand(service);
-            var button = new Button(command);
-            button.click();
-
+            var composite = new CompositeCommand();
+            composite.add(new ResizaCommand());
+            composite.add(new BlackAndWhiteCommand());
+            composite.execute();
 
             Console.ReadLine();
 

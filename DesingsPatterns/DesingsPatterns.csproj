@@ -60,9 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="command\AddCustomerCommand.cs" />
+    <Compile Include="command\BlackAndWhiteCommand.cs" />
+    <Compile Include="command\CompositeCommand.cs" />
     <Compile Include="command\fx\Button.cs" />
     <Compile Include="command\fx\Command.cs" />
     <Compile Include="command\CustomerService.cs" />
+    <Compile Include="command\ResizaCommand.cs" />
     <Compile Include="iteratorExcercise\BrowseHistory.cs" />
     <Compile Include="iteratorExcercise\Iterator.cs" />
     <Compile Include="iteratorProuctExcercise\Iterator.cs" />
