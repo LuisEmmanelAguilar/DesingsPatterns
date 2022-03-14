@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesingsPatterns.command
 {
-    public class BlackAndWhiteCommand : Command
+    public class BlackAndWhiteCommand : ICommand
     {
         public void execute()
         {

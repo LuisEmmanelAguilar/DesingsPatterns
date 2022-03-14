@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesingsPatterns.command
+namespace DesingsPatterns.command.editor
 {
     public interface ICommand
     {

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesingsPatterns.command
 {
-    internal class CompositeCommand : Command
+    internal class CompositeCommand : ICommand
     {
-        private List<Command> _commands = new List<Command>();
+        private List<ICommand> _commands = new List<ICommand>();
 
-        public void add(Command command)
+        public void add(ICommand command)
         {
             _commands.Add(command);
         }

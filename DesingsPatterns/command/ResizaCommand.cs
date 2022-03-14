@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesingsPatterns.command
 {
-    public class ResizaCommand : Command
+    public class ResizaCommand : ICommand
     {
         public void execute()
         {

@@ -9,9 +9,9 @@ namespace DesingsPatterns.command
     public class Button
     {
         private string label;
-        private Command command;
+        private ICommand command;
 
-        public Button(Command command)
+        public Button(ICommand command)
         {
             this.command = command;
         }

@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Nito.Collections.Deque, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nito.Collections.Deque.1.1.1\lib\net461\Nito.Collections.Deque.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -62,10 +65,22 @@
     <Compile Include="command\AddCustomerCommand.cs" />
     <Compile Include="command\BlackAndWhiteCommand.cs" />
     <Compile Include="command\CompositeCommand.cs" />
+    <Compile Include="command\editor\BoldCommand.cs" />
+    <Compile Include="command\editor\History.cs" />
+    <Compile Include="command\editor\ICommand.cs" />
+    <Compile Include="command\editor\HtmlDocument.cs" />
+    <Compile Include="command\editor\IUndoableCommand.cs" />
     <Compile Include="command\fx\Button.cs" />
     <Compile Include="command\fx\Command.cs" />
     <Compile Include="command\CustomerService.cs" />
     <Compile Include="command\ResizaCommand.cs" />
+    <Compile Include="command\videoeditor\AbstractUndoableCommand.cs" />
+    <Compile Include="command\videoeditor\History.cs" />
+    <Compile Include="command\videoeditor\ICommand.cs" />
+    <Compile Include="command\videoeditor\IUndoableCommand.cs" />
+    <Compile Include="command\videoeditor\SetContrastCommand.cs" />
+    <Compile Include="command\videoeditor\UndoCommand.cs" />
+    <Compile Include="command\videoeditor\VideoEditor.cs" />
     <Compile Include="iteratorExcercise\BrowseHistory.cs" />
     <Compile Include="iteratorExcercise\Iterator.cs" />
     <Compile Include="iteratorProuctExcercise\Iterator.cs" />
@@ -78,6 +93,11 @@
     <Compile Include="memento\Editor.cs" />
     <Compile Include="memento\EditorState.cs" />
     <Compile Include="memento\History.cs" />
+    <Compile Include="observer\Chart.cs" />
+    <Compile Include="observer\DataSource.cs" />
+    <Compile Include="observer\IObserver.cs" />
+    <Compile Include="observer\SpreadSheet.cs" />
+    <Compile Include="observer\Subject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="stateExcercise\Bicyling.cs" />
@@ -111,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

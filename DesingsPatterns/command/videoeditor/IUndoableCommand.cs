@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesingsPatterns.command
+namespace DesingsPatterns.command.videoeditor
 {
-    public interface ICommand
+    public interface IUndoableCommand : ICommand
     {
-        void execute();
+        void undo();
     }
 }

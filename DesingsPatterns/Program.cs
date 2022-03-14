@@ -1,5 +1,6 @@
 ﻿
-using DesingsPatterns.command;
+using DesingsPatterns.command.editor;
+using DesingsPatterns.observer;
 using DesingsPatterns.templateExcercise;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,18 @@ namespace DesingsPatterns
     {
         static void Main(string[] args)
         {
-            // Command Pattern
-            var composite = new CompositeCommand();
-            composite.add(new ResizaCommand());
-            composite.add(new BlackAndWhiteCommand());
-            composite.execute();
+            // Observer Pattern
+            var dataSource = new DataSource();
+            var sheet1 = new SpreadSheet();
+            var sheet2 = new SpreadSheet();
+            var chart = new Chart();
+
+            dataSource.addObserver(sheet1);
+            dataSource.addObserver(sheet2);
+            dataSource.addObserver(chart);
+
+            dataSource.setValue(1);
+
 
             Console.ReadLine();
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesingsPatterns.command
 {
-    public class AddCustomerCommand : Command
+    public class AddCustomerCommand : ICommand
     {
         private CustomerService service;
 
