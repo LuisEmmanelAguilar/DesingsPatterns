@@ -8,6 +8,6 @@ namespace DesingsPatterns.observer
 {
     public interface IObserver
     {
-        void update();
+        void update(int value);
     }
 }

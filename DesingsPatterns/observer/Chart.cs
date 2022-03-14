@@ -8,16 +8,9 @@ namespace DesingsPatterns.observer
 {
     internal class Chart : IObserver
     {
-        private DataSource dataSource;
-
-        public Chart(DataSource dataSource)
+        public void update(int value)
         {
-            this.dataSource = dataSource;
-        }
-
-        public void update()
-        {
-            Console.WriteLine("Chart got updated: " + dataSource.getValue());
+            Console.WriteLine("Chart got updated: " + value);
         }
     }
 }
