@@ -8,9 +8,9 @@ namespace DesingsPatterns.observer
 {
     internal class Chart : IObserver
     {
-        public void update()
+        public void update(int value)
         {
-            Console.WriteLine("Chart got updated.");
+            Console.WriteLine("Chart got updated: " + value);
         }
     }
 }
