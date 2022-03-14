@@ -8,9 +8,16 @@ namespace DesingsPatterns.observer
 {
     internal class SpreadSheet : IObserver
     {
-        public void update(int value)
+        private DataSource dataSource;
+
+        public SpreadSheet(DataSource dataSource)
         {
-            Console.WriteLine("SpreadSheet got notified: " + value);
+            this.dataSource = dataSource;
+        }
+
+        public void update()
+        {
+            Console.WriteLine("SpreadSheet got notified: " + dataSource.getValue());
         }
     }
 }

@@ -18,7 +18,7 @@ namespace DesingsPatterns.observer
         public void setValue(int value)
         {
             this.value = value;
-            notifyObservers(value);
+            notifyObservers();
         }
     }
 }

@@ -20,10 +20,10 @@ namespace DesingsPatterns.observer
             _observers.Remove(observer);
         }
 
-        public void notifyObservers(int value)
+        public void notifyObservers()
         {
             foreach (var observer in _observers)
-                observer.update(value);
+                observer.update();
         }
     }
 }
