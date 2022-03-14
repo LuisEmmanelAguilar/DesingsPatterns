@@ -93,6 +93,10 @@
     <Compile Include="memento\Editor.cs" />
     <Compile Include="memento\EditorState.cs" />
     <Compile Include="memento\History.cs" />
+    <Compile Include="observerExcercise\IObserver.cs" />
+    <Compile Include="observerExcercise\StatusBar.cs" />
+    <Compile Include="observerExcercise\Stock.cs" />
+    <Compile Include="observerExcercise\StockListView.cs" />
     <Compile Include="observer\Chart.cs" />
     <Compile Include="observer\DataSource.cs" />
     <Compile Include="observer\IObserver.cs" />
