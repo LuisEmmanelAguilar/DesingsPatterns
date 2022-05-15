@@ -52,7 +52,13 @@
       <HintPath>..\packages\Nito.Collections.Deque.1.1.1\lib\net461\Nito.Collections.Deque.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -87,6 +93,12 @@
     <Compile Include="iteratorProuctExcercise\Product.cs" />
     <Compile Include="iteratorProuctExcercise\ProductCollection.cs" />
     <Compile Include="iterator\BrowseHistory.cs" />
+    <Compile Include="mediator\ArticlesDialogBox.cs" />
+    <Compile Include="mediator\Button.cs" />
+    <Compile Include="mediator\EventHandler.cs" />
+    <Compile Include="mediator\ListBox.cs" />
+    <Compile Include="mediator\TextBox.cs" />
+    <Compile Include="mediator\UIControl.cs" />
     <Compile Include="mementoExcercise\DocumentMemento.cs" />
     <Compile Include="mementoExcercise\DocumentState.cs" />
     <Compile Include="mementoExcercise\HistoryDocument.cs" />
@@ -99,7 +111,7 @@
     <Compile Include="observerExcercise\StockListView.cs" />
     <Compile Include="observer\Chart.cs" />
     <Compile Include="observer\DataSource.cs" />
-    <Compile Include="observer\IObserver.cs" />
+    <Compile Include="observer\Observer.cs" />
     <Compile Include="observer\SpreadSheet.cs" />
     <Compile Include="observer\Subject.cs" />
     <Compile Include="Program.cs" />
