@@ -14,6 +14,7 @@ namespace DesingsPatterns.mediator
         {
             return content;
         }
+
         public void setContent(string content)
         {
             this.content = content;

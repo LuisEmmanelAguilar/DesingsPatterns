@@ -15,6 +15,7 @@ namespace DesingsPatterns.mediator
             return isEnabled;
         }
 
+
         public void setEnabled(bool enabled)
         {
             isEnabled = enabled;

@@ -14,6 +14,7 @@ namespace DesingsPatterns.mediator
         {
             return _selection;
         }
+
         public void setSelection(string selection)
         {
             _selection = selection;

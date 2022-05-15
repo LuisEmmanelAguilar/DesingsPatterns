@@ -14,6 +14,7 @@ namespace DesingsPatterns.mediator
 
         public ArticlesDialogBox()
         {
+
         }
 
         public void simulateUserInteraction()
